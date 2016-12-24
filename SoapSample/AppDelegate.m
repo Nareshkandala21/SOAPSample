@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Reachability.h"
+#import "AppHelper.h"
 @interface AppDelegate ()
 
 @end
@@ -47,5 +48,23 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark- NetworkReachability
 
+-(BOOL)checkNetworkReachability
+{
+    Reachability *rm = [Reachability reachabilityWithHostName:@"www.google.com"];
+    
+    NetworkStatus internetStatus = [rm currentReachabilityStatus];
+    
+    if ((internetStatus != ReachableViaWiFi) && (internetStatus != ReachableViaWWAN))
+    {
+        //        UIAlertView*    aAlert = [[UIAlertView alloc] initWithTitle:APP_NAME message:ERROR_INTERNET delegate:nil cancelButtonTitle:Alert_Ok_Button otherButtonTitles:nil];
+        //        [aAlert show];
+        return NO;
+    }
+    else{
+        return YES;
+    }
+    
+}
 @end
