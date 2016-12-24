@@ -27,7 +27,7 @@
 #pragma mark Login Service
 -(void)loginService
 {
-    AppDelegate*appdelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+//    AppDelegate*appdelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     if([AppHelper appDelegate].checkNetworkReachability)
     {
         [[AppHelper sharedInstance]showIndicator];
