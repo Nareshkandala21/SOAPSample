@@ -26,6 +26,7 @@
 		0E2359A91E0E498C003D60DF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2359A81E0E498C003D60DF /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0E2359AD1E0E4B6B003D60DF /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2359AC1E0E4B6B003D60DF /* AppHelper.m */; };
 		0E2359B11E0E4D62003D60DF /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2359B01E0E4D62003D60DF /* XMLReader.m */; };
+		0E3756E01E1ABEA200FE87D6 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3756DF1E1ABEA200FE87D6 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		0E2359AC1E0E4B6B003D60DF /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHelper.m; sourceTree = "<group>"; };
 		0E2359AF1E0E4D62003D60DF /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		0E2359B01E0E4D62003D60DF /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		0E3756DE1E1ABEA200FE87D6 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		0E3756DF1E1ABEA200FE87D6 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		0E2359681E0E461C003D60DF /* SoapSample */ = {
 			isa = PBXGroup;
 			children = (
+				0E3756DD1E1ABE8C00FE87D6 /* DBManager */,
 				0E2359AE1E0E4D56003D60DF /* XmlReader */,
 				0E2359AA1E0E4B57003D60DF /* AppHelper */,
 				0E2359A61E0E4943003D60DF /* Reachability */,
@@ -186,6 +190,15 @@
 			name = XmlReader;
 			sourceTree = "<group>";
 		};
+		0E3756DD1E1ABE8C00FE87D6 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				0E3756DE1E1ABEA200FE87D6 /* DBManager.h */,
+				0E3756DF1E1ABEA200FE87D6 /* DBManager.m */,
+			);
+			name = DBManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,6 +274,7 @@
 				0E2359711E0E461C003D60DF /* ViewController.m in Sources */,
 				0E23599A1E0E48D7003D60DF /* AFHTTPRequestOperationManager.m in Sources */,
 				0E23599C1E0E48D7003D60DF /* AFNetworkReachabilityManager.m in Sources */,
+				0E3756E01E1ABEA200FE87D6 /* DBManager.m in Sources */,
 				0E2359A01E0E48D7003D60DF /* AFURLResponseSerialization.m in Sources */,
 				0E2359AD1E0E4B6B003D60DF /* AppHelper.m in Sources */,
 				0E23599E1E0E48D7003D60DF /* AFURLConnectionOperation.m in Sources */,
@@ -429,6 +443,7 @@
 				0E23597F1E0E461D003D60DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

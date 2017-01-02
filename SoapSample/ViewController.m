@@ -12,6 +12,7 @@
 #import "Reachability.h"
 #import "AppDelegate.h"
 #import "XMLReader.h"
+#import "DBManager.h"
 @interface ViewController ()
 
 @end
@@ -100,6 +101,25 @@
         [[NSOperationQueue mainQueue] addOperation:operation];
     }
     else{
+        
+        DBManager *  db = [[DBManager alloc]init];
+        BOOL checkdata=[db check_isdataAvailable];
+        
+        if (checkdata==YES) {
+            NSLog(@"data_isavailable");
+              //      [self gettingDataService];
+            //call data from db
+            
+        }else{
+            
+            //call service
+            
+            //  [self BioDataService];
+        }
+        
+
+        
+        
         
     }
     
